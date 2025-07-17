@@ -1,0 +1,159 @@
+body {
+      margin: 0;
+      overflow: hidden;
+    }
+
+    canvas {
+      display: block;
+      width: 100vw;
+      height: 100vh;
+    }
+    #download {
+      position: absolute;
+      bottom: 2vh;
+      right: 2vh;
+    }
+    /*#joystick {
+      position: absolute;
+      width: 20vh;
+      height: 20vh;
+      bottom: 2vh;
+      left: 2vh;
+      z-index: 2;
+    }*/
+    #health {
+      position: absolute;
+      top: 1vh;
+      left: 1vh;
+    }
+    #Ehealth {
+      position: absolute;
+      top: 1vh;
+      right: 1vh;
+      rotate: 180deg;
+    }
+    #shootBtn {
+      position: absolute;
+      bottom: 2vh;
+      right: 3vh;
+      border: none;
+      width: 18vw;
+      height: 7vh;
+      font-size: 15px;
+      padding: 1vh 2vh;
+      border-radius: 2vh;
+      background-color: maroon;
+      color: yellow;
+    }
+    #startScreen {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+    }
+    #startScreen h1 {
+      font-size: 5vh;
+      margin-bottom: 2vh;
+    }
+    #startBtn {
+      font-size: 18px;
+      padding: 1vh 2vh;
+      border-radius: 2vh;
+      border: none;
+      background-color: maroon;
+      color: yellow;
+      cursor: pointer;
+      animation: pulse 1.5s infinite;
+    }
+    #startScreen p {
+      font-size: 2.5vh;
+      margin-bottom: 4vh;
+    }
+    
+    #winScreen {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      display: none;
+    }
+    #winScreen h1 {
+      font-size: 5vh;
+      margin-bottom: 2vh;
+    }
+    #winBtn {
+      font-size: 18px;
+      padding: 1vh 2vh;
+      border-radius: 2vh;
+      border: none;
+      background-color: maroon;
+      color: yellow;
+      cursor: pointer;
+      animation: pulse 1.5s infinite;
+    }
+    #winScreen p {
+      font-size: 2.5vh;
+      margin-bottom: 4vh;
+    }
+    
+    #restartScreen {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+    }
+    #restartScreen h1 {
+      font-size: 5vh;
+      margin-bottom: 2vh;
+    }
+    
+    #restartBtn {
+      font-size: 18px;
+      padding: 1vh 2vh;
+      border-radius: 2vh;
+      border: none;
+      background-color: maroon;
+      color: yellow;
+      cursor: pointer;
+      animation: pulse 1.5s infinite;
+    }
+    #score {
+      position: absolute;
+      top: 1vh;
+      right: 1vh;
+      color: brown;
+    }
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+
+      50% {
+        transform: scale(1.08);
+      }
+
+      100% {
+        transform: scale(1);
+      }
+    }
