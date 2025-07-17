@@ -1,1 +1,39 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Highway Shooter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <button id="shootBtn" onclick="shoot()">shoot</button>
+ <div id="joystick"></div>
+ <h1 id="score">Score : 0</h1>
+ <progress id="health" value="100">Health</progress>
+ <progress id="Ehealth" value="100">Health</progress>
+ <audio src="explosion-42132.mp3" id="explosion"></audio>
+ <audio src="seagullhit.ogg" id="playerHit"></audio>
+ <audio src="mixkit-small-electric-glitch-2595.wav" id="invertSound"></audio>
+ 
+ <div id="startScreen">
+   <h1>🚗 Highway Shooter</h1>
+   <p>Tap Start to Begin</p>
+   <button id="startBtn">start</button>
+ </div>
+ 
+ <div id="winScreen">
+   <h1>🚗 You won and reached to level two</h1>
+   <p>Tap Start to Begin</p>
+   <button id="winBtn">start</button>
+ </div>
+ 
+ <div id="restartScreen">
+   <h1>🚗 Highway Shooter</h1>
+   <button id="restartBtn">restart</button>
+ </div>
+ <script src="https://cdn.jsdelivr.net/npm/three@0.160.1/build/three.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/nipplejs@0.9.1/dist/nipplejs.min.js"></script>
+ <script src="script.js"></script>
+</body>
+</html>
